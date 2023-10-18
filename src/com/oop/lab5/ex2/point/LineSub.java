@@ -1,25 +1,24 @@
 package com.oop.lab5.ex2.point;
 
-public class Line {
-    private Point begin;
+public class LineSub extends Point {
     private Point end;
 
-    public Line(Point begin, Point end) {
-        this.begin = begin;
-        this.end = end;
-    }
-
-    public Line(int beginX, int beginY, int endX, int endY) {
-        this.begin = new Point(beginX, beginY);
+    public LineSub(int beginX, int beginY, int endX, int endY) {
+        super(beginX, beginY);
         this.end = new Point(endX, endY);
     }
 
+    public LineSub(Point begin, Point end) {
+        super(begin.getX(), begin.getY());
+        this.end = end;
+    }
+
     public Point getBegin() {
-        return begin;
+        return new Point(super.getX(), super.getY());
     }
 
     public void setBegin(Point begin) {
-        this.begin = begin;
+        begin.setXY(super.getX(), super.getY());
     }
 
     public Point getEnd() {
@@ -31,19 +30,19 @@ public class Line {
     }
 
     public int getBeginX() {
-        return begin.getX();
+        return super.getX();
     }
 
     public void setBeginX(int x) {
-        begin.setX(x);
+        super.setX(x);
     }
 
     public int getBeginY() {
-        return begin.getY();
+        return super.getY();
     }
 
     public void setBeginY(int y) {
-        begin.setY(y);
+        super.setY(y);
     }
 
     public int getEndX() {
@@ -63,8 +62,8 @@ public class Line {
     }
 
     public void setBeginXY(int x, int y) {
-        begin.setX(x);
-        begin.setY(y);
+        super.setX(x);
+        super.setY(y);
     }
 
     public void setEndXY(int x, int y) {
@@ -88,6 +87,6 @@ public class Line {
 
     @Override
     public String toString() {
-        return String.format("Line[start = %s, end = %s]", begin.toString(), end.toString());
+        return String.format("Line[start = %s, end = %s]", super.toString(), end.toString());
     }
 }
