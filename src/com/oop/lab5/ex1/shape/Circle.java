@@ -1,4 +1,4 @@
-package com.oop.lab5.shape;
+package com.oop.lab5.ex1.shape;
 
 public class Circle extends Shape {
     private double radius;

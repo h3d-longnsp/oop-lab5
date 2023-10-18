@@ -1,4 +1,4 @@
-package com.oop.lab5.person;
+package com.oop.lab5.ex1.person;
 
 public class Student extends Person {
     private String program;

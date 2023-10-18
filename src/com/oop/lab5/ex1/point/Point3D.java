@@ -1,4 +1,4 @@
-package com.oop.lab5.point;
+package com.oop.lab5.ex1.point;
 
 public class Point3D extends Point2D {
     private float z;

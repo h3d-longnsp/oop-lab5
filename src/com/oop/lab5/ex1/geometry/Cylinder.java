@@ -1,4 +1,4 @@
-package com.oop.lab5.geometry;
+package com.oop.lab5.ex1.geometry;
 
 public class Cylinder extends Circle {
     private double height;
