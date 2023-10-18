@@ -13,5 +13,21 @@ public class TestShape {
 
         Square square1 = new Square("blue", false, 5);
         System.out.println(square1);
+
+        // test setters and getters
+        shape1.setColor("green");
+        shape1.setFilled(false);
+        System.out.println(shape1);
+
+        System.out.println(circle1.getArea());
+        System.out.println(circle1.getPerimeter());
+        circle1.setRadius(4.5);
+        System.out.println(circle1.getArea());
+        System.out.println(circle1.getPerimeter());
+
+        System.out.println(rectangle1.getArea());
+        System.out.println(rectangle1.getPerimeter());
+
+        System.out.println(square1.getArea());
     }
 }
